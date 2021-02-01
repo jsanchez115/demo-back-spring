@@ -22,8 +22,9 @@ public class DemoController {
 		p.setNombre("Has");		
 		repo.save(p);*/
 		
-		model.addAttribute("name", name);		
-		return "greeting";
+		model.addAttribute("name", name);	
+		//Este es el nombre de la vista, existe en templates un archvo greeting.html 
+		return "greeting"; 
 	}
 	
 	@GetMapping("/")
