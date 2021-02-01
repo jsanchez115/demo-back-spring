@@ -16,8 +16,7 @@ public class DemoController {
 	
 	@GetMapping("/greeting")
 	public String greeting(@RequestParam(name="name", required=false, defaultValue="Covid-19 World") String name, Model model) {
-		
-		
+			
 		/*Persona p = new Persona();
 		p.setIdPersona(2);
 		p.setNombre("Has");		
