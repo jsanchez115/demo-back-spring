@@ -23,16 +23,14 @@ public class DemoController {
 		p.setNombre("Has");		
 		repo.save(p);*/
 		
-		model.addAttribute("name", name);
-		
+		model.addAttribute("name", name);		
 		return "greeting";
 	}
 	
 	@GetMapping("/")
 	public String listar(Model model) {	
 	
-		model.addAttribute("personas", repo.findAll());
-		
+		model.addAttribute("personas", repo.findAll());		
 		return "listarPersonas";
 	}
 
